@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:100%;
+    display: flex;
+    background-color: brown;
+    font-family:fantasy;
+}
+nav{
+    display: block;
+    width:30%;
+    background-color: rgb(32, 64, 168);
+    position: absolute;
+    left:0;
+    transform: translateX(-1000px);
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   height:100vh; 
+}
+nav ul li{
+    list-style: none;
+    font-size: 2rem;
+    margin: 2em;
+    margin-right: 3em;
+}
+label{
+    border:solid 1px black;
+    top:1em;
+    left:0;
+    position: absolute;
+    width:30px;
+    height:30px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main{
+    right: 0;
+    position: absolute;
+    width: 100%;
+
+}
+input{
+    display: none;
+}
+
+.box:checked ~ nav{
+    transform: translateX(0);
+   
+}
+.box:checked ~ main{
+    width:70%;
+}
+span{
+    top:.78em;
+    left:.2em;
+}
+span,
+span::after,
+span::before{
+    display: block;
+    position: relative;
+    width:20px;
+    height:3px;
+    background-color: black;
+}
+span::before,
+span::after{
+    content:'';
+    position:absolute;
+}
+span::before{
+    bottom:7px;
+}
+span::after{
+    top:7px;
+}
+.main-container{
+    width:40%;
+    display: block;
+    margin: auto;
+}
+.marg{
+    margin-top:1em;
+}

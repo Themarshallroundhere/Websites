@@ -1,0 +1,478 @@
+/* 
+#834655 dark red */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+div .container{
+  background-size:contain;
+  background-image: url(images/Possible-bkg.JPG);
+}
+body {
+  font-family: tahoma ;
+  font-size: 1.25rem;
+  /* background-image:url(Houkstone.jpg); */
+  /* background-size: 50% 100%; */
+  /* background-size: no-repeat;
+	background-size:cover; */
+  /* background-size:length;  */
+  /* min-height:100vh; */
+}
+h1 {
+  font-family: Impact;
+  font-size:1.5em;
+  text-align: center;
+  margin-top: .1px;
+}
+.contact{
+  font-size:.7em;
+  text-align:center;
+  font-family:tahoma ;
+}
+header {
+  border: goldenrod double 4.5px;
+  padding: 1.5em;
+  /* position:fixed; */
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+  width: 100%;
+  box-shadow: 10px 10px 45px 0 rgba(245, 197, 65, 0.3);
+  z-index: 3;
+}
+
+/* .slideshow-header{
+  height:60vh;
+  width:100%;
+  border:double goldenrod 5px;
+  display: flex;
+  justify-content: center;
+}
+.center-header{
+  max-width:578px;
+  display: flex;
+  justify-content: center;
+} */
+/* img {
+  max-width: 540px;
+  width: 80%;
+  display: block;
+  margin: auto;
+} */
+
+.title {
+
+  width:100%;
+  display: block;
+  margin: auto;
+  background-color: black;
+  padding: 2.5rem;
+}
+.chim {
+  border: 2px double goldenrod;
+}
+/* Navigation */
+
+nav ul {
+  border-radius: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: rgba(255, 254, 254, 0.918);
+  text-align: center;
+}
+/* menu itself */
+nav ul a {
+  display: block;
+  text-decoration: none;
+  color: maroon;
+  font-size: 0.9rem;
+  padding: 1.5em;
+}
+
+/* outline:1px solid goldenrod;
+	padding:25px;
+	/* border-right:1px double goldenrod; */
+
+nav ul a:hover {
+  box-shadow: 0px 0px 10px 10px rgba(245, 197, 65, 0.4);
+  background-color: rgba(245, 197, 65, 0.3);
+  border-radius: 200px;
+}
+header .logo {
+  font-family: Impact;
+  font-weight: 50;
+  text-decoration: none;
+  color: white;
+  padding: 18px 20px;
+  display: block;
+  font-size: 1.5rem;
+  float: left;
+}
+header .logo a {
+  color: white;
+}
+header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu button */
+header .menu-icon {
+  /* outline:1px solid gold; */
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+/* menu icon itself */
+header .menu-icon .nav-icon {
+  background: lightblue;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+header .menu-icon .nav-icon:before {
+  background: lightblue;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 5px;
+}
+header .menu-icon .nav-icon:after {
+  background: lightblue;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+
+header .menu-btn {
+  display: none;
+}
+/* IMPORTANT sybling selector */
+header .menu-btn:checked ~ .menu {
+  max-height: 280px;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.box {
+  border-radius: 5%;
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-attachment: fixed;
+  /* z-index:2; */
+  /* clip-path: inset(10em); */
+  width: 50%;
+  height: 50vh;
+  min-width: 296px;
+  /* background-color: rgba(0, 0, 0, 0.712); */
+  background-color: #f3f4f705;
+  background-image: linear-gradient(315deg, #2c2c2c6e 0%, #5585ff 74%);
+  box-shadow: 0 2px 22px 15px rgba(0, 145, 255, 0.336);
+  /* backdrop-filter: blur( 110px ); */
+  border: 5.3px double #ffd717;
+  text-align: center;
+  /* margin:0 1.5rem 0 1.5rem; */
+  /* padding-top:16%;s
+    padding-bottom:10%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.btn-head {
+  margin: 0.5rem;
+  color: #ffffff;
+  padding-top: 0.5rem;
+  font-size: 1.1em;
+  width: 25vw;
+  padding-bottom: 0.6rem;
+  border: solid 4px lightblue;
+  background: rgba(255, 255, 255, 0);
+}
+.btn-head1 {
+  min-width: 150px;
+  max-width: 150px;
+}
+.btn-head:hover {
+  color: black;
+  box-shadow: lightblue 0px 1px 25px -10px;
+  background-color: #fbab7e;
+  background-color: #ffde00;
+  background-image: linear-gradient(0deg, #ffde00 0%, #dccb98 100%);
+}
+/* slide show */
+
+
+
+
+
+
+
+
+
+
+
+.slide-img{
+  
+  object-fit: cover;
+}
+.center-header{
+ 
+}
+
+.img-slider{
+  max-height:100vh ;
+  position:relative;
+  width: 100%;
+  /* height: 1000vh; */
+  margin: 10px;
+  background: rgb(0, 0, 0);
+}
+
+.img-slider .slide{
+  z-index:1;
+  position:absolute;
+  width:100%;
+}
+
+.img-slider .slide img{
+
+  z-index:1;
+  width:100%;
+  border-radius: 5px;
+}
+
+.img-slider .slide .info{
+  position:absolute;
+  
+ top:0;
+  padding:15px 30px;
+}
+
+.img-slider .slide .info h2{
+  color: white;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight:800;
+  letter-spacing: 2px;
+
+}
+
+.img-slider .slide .info p{
+  color: white;
+  background: rgba(128, 128, 128, 0.655);
+  font-size:16px;
+  width: 60%;
+  padding:10px;
+}
+
+.img-slider .navigation{
+  z-index:2;
+  position:absolute;
+  display:flex;
+  bottom:30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.img-slider .navigation .btn{
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius:50%;
+  cursor:pointer;
+}
+@media (min-width: 555px){
+  .img-slider .slide .info p{
+    max-width: 469px;
+  }
+  .img-slider .slide .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-slider{
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .slide-img{
+  max-width:470px;
+}
+}
+@media (min-width: 550px){
+  .slide-img{
+    display: block;
+    margin: auto;
+  max-width:470px;
+}
+ .img-slider{
+    width:100%;
+    height: 70vh;
+  }
+
+}
+@media (max-width: 550px){
+ 
+  .img-slider{
+  
+    min-height: 70vh;
+
+  }
+
+  .img-slider .slide .info{
+    padding: 10px 25px;
+  }
+
+  .img-slider .slide .info h2{
+    font-size: 35px;
+  }
+
+  .img-slider .slide .info p{
+    width: 70%;
+    font-size: 15px;
+  }
+  .img-slider .navigation{
+    bottom: 25px;
+  }
+
+  .img-slider .navigation .btn{
+    width: 10px;
+    height: 10px;
+    margin: 8px;
+  }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* slideshow end */
+/* Main body */
+.pad{
+  padding:.5rem;
+  
+}
+.chim{
+  margin: 1rem 0 0 0;
+  width:80%;
+}
+.chim-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-left: double 3px goldenrod;
+  border-right: double 3px goldenrod;
+  color:white;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+  padding:1rem;
+}
+footer {
+  width: 100%;
+  border: goldenrod double 3px;
+  background-color: black;
+  height: 20vh;
+}
+
+@media (min-width: 48em) {
+  .head-img {
+    position: relative;
+    bottom: 1.9rem;
+  }
+  .chim-box {
+    display: flex;
+  }
+  .chimney {
+    width: 45%;
+  }
+  .title-img {
+    padding: 2.6em;
+  }
+  header .logo {
+    right: 1em;
+    bottom: 1.07em;
+    position: relative;
+  }
+  .nav-header {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top: 3px double goldenrod;
+    border-bottom: 3px double goldenrod;
+    height: 2em;
+  }
+  nav ul {
+    background-color: rgba(168, 167, 167, 0.4);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header li {
+    float: left;
+  }
+  header li a {
+    bottom: 0.9em;
+    position: relative;
+    padding: 20px 30px;
+  }
+  header .menu {
+    bottom: 1em;
+    position: relative;
+    height: 2em;
+    clear: none;
+    max-height: none;
+  }
+  header .menu-icon {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1000px) {
+
+}
+@media all and (max-width: 470px) {
+  main {
+    padding: 0;
+  }
+
+}
